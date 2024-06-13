@@ -1,0 +1,14 @@
+h1{
+    color: rgb(78, 160, 194);
+    border-bottom: 15px dotted rgb(11, 11, 11);
+    font-family: Georgia, serif;
+    text-shadow: 1px 1px 2px rgb(1, 1, 1);
+}
+
+li {
+    list-style-type:none;
+    background:#ccebf7;
+    border:2px solid rgb(4, 4, 4);
+  
+        
+}
