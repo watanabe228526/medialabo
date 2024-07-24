@@ -1,23 +1,86 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8">
-        <title>My project page</title>
-        <link rel="stylesheet" href="project.css">
-    </head>
-    <body>
-        <h1>世界の天気（検索結果1件）</h1>
-        <ul>
-            <li>緯度: 116.3972</li>
-            <li>経度: 39.9075</li>
-            <li>天気: 曇りがち</li>
-            <li>最低気温: 9.94</li>
-            <li>最高気温: 9.94</li>
-            <li>湿度: 14</li>
-            <li>風速: 2.65</li>
-            <li>風向: 197</li>
-            <li>都市名: 北京市</li>
-        </ul>
+<html><head>
+    <title>世界の天気</title>
+    <link rel="stylesheet" href="project.css">
+    <meta charset="utf=8">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js" defer=""></script>
+    <script src="project.js" defer=""></script>
+    
+  </head>
+  <body>
+ 
+    <h1>世界の天気</h1>
 
-    </body>
-</html>
+    
+    <h2>地域</h2>
+    <table> 
+      <tbody><tr>
+        
+      </tr>
+      <tr>
+        <td>Cario カイロ （エジプト）</td>
+        <td>360630</td>
+      </tr>
+      <tr>
+        <td>Moscow モスクワ （ロシア）</td>
+        <td>524901</td>
+      </tr>
+      <tr>
+        <td>Johannesburg ヨハネスブルク （南アフリカ）</td>
+        <td>993800</td>
+      </tr>
+      <tr>
+        <td>Beijing 北京 （中華人民共和国）</td>
+        <td>1816670</td>
+      </tr>
+      <tr>
+        <td>Tokyo 東京 （日本）</td>
+        <td>1850147</td>
+      </tr>
+      <tr>
+        <td>Singapore シンガポール</td>
+        <td>1880252</td>
+      </tr>
+      <tr>
+        <td>Sydney シドニー （オーストラリア）</td>
+        <td>2147714</td>
+      </tr>
+      <tr>
+        <td>London ロンドン （イギリス）</td>
+        <td>2643743</td>
+      </tr>
+      <tr>
+        <td>Paris パリ （フランス）</td>
+        <td>2968815</td>
+      </tr>
+      <tr>
+        <td>Rio de Janeiro リオデジャネイロ （ブラジル）</td>
+        <td>3451189</td>
+      </tr>
+      <tr>
+        <td>New York ニューヨーク （アメリカ合衆国）</td>
+        <td>5128581</td>
+      </tr>
+      <tr>
+        <td>Los Angeles ロサンゼルス （アメリカ合衆国）</td>
+        <td>5368361</td>
+      </tr>
+      
+
+    </tbody>
+    
+</table>
+<h2>検索</h2>
+<label for="ID">ID: </label>
+<input type="text" name="kuni" id="kuni" size="10">
+<button id="print">検索</button>
+
+<p id="result">検索結果を表示→</p>
+      
+
+
+
+    
+  
+
+</body></html>

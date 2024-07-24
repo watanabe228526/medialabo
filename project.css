@@ -5,10 +5,22 @@ h1{
     text-shadow: 1px 1px 2px rgb(1, 1, 1);
 }
 
-li {
+h2{
     list-style-type:none;
     background:#ccebf7;
     border:2px solid rgb(4, 4, 4);
   
         
 }
+table{
+    list-style-type:none;
+    background:#ccebf7;
+    border:2px solid rgb(4, 4, 4);
+    
+        
+}
+th, td {
+    border: solid 3px rgb(3, 3, 3);
+    padding: 10px;
+}
+
