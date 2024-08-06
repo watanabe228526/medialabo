@@ -1,7 +1,7 @@
 let c = document.querySelector('#print');
  c.addEventListener('click', sendRequest);
 
-function showResult(resp) {
+function showRes(resp) {
     
     let data = resp.data;
 
@@ -24,13 +24,13 @@ function sendRequest() {
 
     
     axios.get(url)
-        .then(showResult)   
-        .catch(showError)   
-        .then(finish);      
+        .then(showRes)   
+        .catch(showEr)   
+        .then(fin);      
 }
-function showError(err) {
+function showEr(err) {
     console.log(err);
 }
-function finish() {
+function fin() {
     console.log('Ajax 通信が終わりました');
 }

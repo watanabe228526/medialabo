@@ -52,10 +52,18 @@ div3.insertAdjacentElement('beforeend', p4);
 
 
 // 練習4-4 箇条書き削除プログラム
-for(let n of li){
-	n = document.querySelector('ul#location');         
-	n.remove(); 
+let loc=document.querySelectorAll('ul#location>li');
+for(let liElement of loc){
+	         
+	liElement.remove(); 
 }
 
 // 練習4-5 箇条書き追加プログラム
 
+let kei=document.querySelector('ul#location');
+for(let i=0;i<data.length;i++){
+	let city=data[i];
+	let listItem=document.createElement('li');
+	listItem.textContent=city.name+'...緯度:'+city.lat+',経度:'+city.lng;
+	kei.appendChild(listItem);
+}
